@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Enzo chat</title>
 
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Euso chat login</title>
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+
+        <!-- Firebase App is always required and must be first -->
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
+
+        <!-- Add additional services that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-functions.js"></script>
+
+        <!-- Firebase UI -->
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAdAQIqD8WgP3bE2LRhiNXzh9HcAsPfX4Q",
+            authDomain: "euso-chat.firebaseapp.com",
+            databaseURL: "https://euso-chat.firebaseio.com",
+            projectId: "euso-chat",
+            storageBucket: "euso-chat.appspot.com",
+            messagingSenderId: "604067900535"
+        };
+        firebase.initializeApp(config);
+        </script>
+
+        <script src="/assets/js/login_script.js"></script>
+        <!--<script src="/assets/js/script.js"></script>-->
 
 
-    <!-- Firebase App is always required and must be first -->
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
-
-    <!-- Add additional services that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-functions.js"></script>
-
-    <!-- Firebase UI -->
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyAdAQIqD8WgP3bE2LRhiNXzh9HcAsPfX4Q",
-        authDomain: "euso-chat.firebaseapp.com",
-        databaseURL: "https://euso-chat.firebaseio.com",
-        projectId: "euso-chat",
-        storageBucket: "euso-chat.appspot.com",
-        messagingSenderId: "604067900535"
-      };
-      firebase.initializeApp(config);
-    </script>
-
-    <script src="/assets/js/script.js"></script>
-
-    <style>
-    </style>
-  </head>
+        <style>
+        </style>
+    </head>
   <body>
         <!-- The surrounding HTML is left untouched by FirebaseUI.
         Your app may use that space for branding, controls and other customizations.-->
@@ -49,7 +51,7 @@
 
 
         <script>
-            
+
         </script>
   </body>
 </html>
