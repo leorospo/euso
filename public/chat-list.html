@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Euso</title>
+        <meta name="description" content="Lavoro organizzato">
+        <link rel="stylesheet" href="normalize.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+
+        <!-- Firebase App is always required and must be first -->
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
+
+        <!-- Add additional services that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-functions.js"></script>
+
+        <!-- Firebase UI -->
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAdAQIqD8WgP3bE2LRhiNXzh9HcAsPfX4Q",
+            authDomain: "euso-chat.firebaseapp.com",
+            databaseURL: "https://euso-chat.firebaseio.com",
+            projectId: "euso-chat",
+            storageBucket: "euso-chat.appspot.com",
+            messagingSenderId: "604067900535"
+        };
+        firebase.initializeApp(config);
+        </script>
+
+        <script src="/assets/js/script.js"></script>
+
+        <style>
+
+            .develop_leo_mute {
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                margin-left: 8px;
+
+                display: inline-block;
+                top: 0;
+            }
+
+
+        </style>
+    </head>
+
+<body>
+
+    <div class="cnt-global">
+
+        <div class="cnt-section-left">
+
+            <div class="header content-sb">
+                <a href="###">
+                    <div class="icn-cnt-44 tFF">
+                        <i class="material-icons settings">settings</i>
+                    </div>
+                </a>
+                <a href="###">
+                    <div class="icn-cnt-44 tFF">
+                        <i class="material-icons search">search</i>
+                    </div>
+                </a>
+                <a href="###">
+                    <div class="icn-cnt-44 tFF">
+                        <i class="material-icons favorite">star_border</i>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="cnt-full g1">
+
+                <div class="chat-list-element c-y1">
+
+
+                    <img class="img-profile-52" src="assets/img/1_carol.jpg">
+
+                    <div class="chat-list-element-content">
+
+                        <div class="chat-list-element-content-text">
+                            <div class="chat-list-element-title sns-sp-620 tg6">Evans Carol</div>
+                            <div class="develop_leo_mute c0"></div>
+                            <div class="chat-list-element-subtitle sns-sp-416 tg3">Let's go to the meeting.</div>
+                        </div>
+
+                        <div class="chat-list-element-content-right">
+                            <div class="chat-list-element-notification">
+                                <div class="sns-pn-414">3</div>
+                            </div>
+
+                            <div class="chat-list-element-time-container">
+                                <div class="sns-pn-410 tg5">10:30</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chat-list-sep"></div>
+
+
+
+                </div>
+
+                
+
+                <div class="chat-list-element c-w">
+                        <img src="assets/img/2_mark.jpg" class="img-profile-52">
+                        <div class="chat-list-element-content">
+                            <div class="chat-list-element-content-text">
+                                <div class="chat-list-element-title sns-sp-620 tg6">Whalberg Mark</div>
+                                <div class="chat-list-element-subtitle sns-sp-416 tg3">Hello!</div>
+                            </div>
+                            <div class="chat-list-element-content-right">
+                                <div class="chat-list-element-notification">
+                                    <div class="sns-pn-414">1</div>
+                                </div>
+
+                                <div class="chat-list-element-time-container">
+                                    <div class="sns-pn-410 tg5">10:30</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="chat-list-sep"></div>
+
+                </div>
+
+                <div class="chat-list-element c-w">
+                        <img src="assets/img/3_ester.jpg" class="img-profile-52">
+                        <div class="chat-list-element-content">
+                            <div class="chat-list-element-content-text">
+                                <div class="chat-list-element-title sns-sp-620 tg6">May Ester</div>
+                                <div class="chat-list-element-subtitle sns-sp-416 tg3">Let's meet at 11:00 am.</div>
+                            </div>
+                            <div class="chat-list-element-content-right">
+                                <div class="chat-list-element-notification">
+                                    <div class="sns-pn-414">2</div>
+                                </div>
+
+                                    <div class="chat-list-element-time-container">
+                                        <div class="sns-pn-410 tg5">10:30</div>
+                                    </div>
+
+                                </div>
+                        </div>
+
+                        <div class="chat-list-sep"></div>
+
+                </div>
+
+                <div class="chat-list-element c-y1">
+                        <img src="assets/img/4_martin.jpg" class="img-profile-52">
+                        <div class="chat-list-element-content">
+                            <div class="chat-list-element-content-text">
+                                <div class="chat-list-element-title sns-sp-620 tg6">Miller Martin</div>
+                                <div class="chat-list-element-subtitle sns-sp-416 tg3">Hi, please send me the project.</div>
+                            </div>
+                            <div class="chat-list-element-content-right">
+                                <div class="chat-list-element-notification">
+                                    <div class="sns-pn-414">4</div>
+                                </div>
+                                <div class="chat-list-element-time-container">
+                                    <div class="sns-pn-410 tg5">10:30</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-list-sep"></div>
+
+                </div>
+
+                <div class="chat-list-element c-w">
+                        <img src="assets/img/5_clara.jpg" class="img-profile-52">
+                        <div class="chat-list-element-content">
+                            <div class="chat-list-element-content-text">
+                                <div class="chat-list-element-title sns-sp-620 tg6">Padovan Clara</div>
+                                <div class="chat-list-element-subtitle sns-sp-416 tg3">It's LATE!!!!</div>
+                            </div>
+                            <div class="chat-list-element-content-right">
+                                <div class="chat-list-element-time-container">
+                                    <div class="sns-pn-410 tg5">10:30</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-list-sep"></div>
+
+                </div>
+
+                <div class="chat-list-element c-w">
+                        <img src="assets/img/6_jhon.jpg" class="img-profile-52">
+                        <div class="chat-list-element-content">
+                            <div class="chat-list-element-content-text">
+                                <div class="chat-list-element-title sns-sp-620 tg6">Smith Jhon</div>
+                                <div class="chat-list-element-subtitle sns-sp-416 tg3">No it's ok!!</div>
+                            </div>
+                            <div class="chat-list-element-content-right">
+                                <div class="chat-list-element-time-container">
+                                    <div class="sns-pn-410 tg5">10:30</div>
+                                </div>                            </div>
+                        </div>
+
+                        <div class="chat-list-sep"></div>
+
+                </div>
+
+                <div class="chat-list-element c-w">
+                        <img src="assets/img/7_teresa.jpg" class="img-profile-52">
+                        <div class="chat-list-element-content">
+                            <div class="chat-list-element-content-text">
+                                <div class="chat-list-element-title sns-sp-620 tg6">Matafioli Teresa</div>
+                                <div class="chat-list-element-subtitle sns-sp-416 tg3">Call Me!! NOW!</div>
+                            </div>
+                            <div class="chat-list-element-content-right">
+                                <div class="chat-list-element-time-container">
+                                    <div class="sns-pn-410 tg5">10:30</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-list-sep"></div>
+
+                </div>
+                
+
+                <div class="chat-list-element c-w">
+                        <img src="assets/img/8_carla.jpg" class="img-profile-52">
+                        <div class="chat-list-element-content">
+                            <div class="chat-list-element-content-text">
+                                <div class="chat-list-element-title sns-sp-620 tg6">Bruni Carla</div>
+                                <div class="chat-list-element-subtitle sns-sp-416 tg3">I don't know.</div>
+                            </div>
+                            <div class="chat-list-element-content-right">
+                                <div class="chat-list-element-time-container">
+                                    <div class="sns-pn-410 tg5">10:30</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-list-sep"></div>
+
+                </div>
+
+                <div class="chat-list-element c-w">
+                        <img src="assets/img/9_matteo.jpg" class="img-profile-52">
+                        <div class="chat-list-element-content">
+                            <div class="chat-list-element-content-text">
+                                <div class="chat-list-element-title sns-sp-620 tg6">Di Maio Matteo</div>
+                                <div class="chat-list-element-subtitle sns-sp-416 tg3">Graet!</div>
+                            </div>
+                            <div class="chat-list-element-content-right">
+                                <div class="chat-list-element-time-container">
+                                    <div class="sns-pn-410 tg5">10:30</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-list-sep"></div>
+
+                </div>
+
+                <div class="chat-list-element c-w">
+                        <img src="assets/img/10_giorgia.jpg" class="img-profile-52">
+                        <div class="chat-list-element-content">
+                            <div class="chat-list-element-content-text">
+                                <div class="chat-list-element-title sns-sp-620 tg6">Angelini Giorgia</div>
+                                <div class="chat-list-element-subtitle sns-sp-416 tg3">Remember to bring the material for the
+                                    presentation of the project.</div>
+                            </div>
+                            <div class="chat-list-element-content-right">
+                                <div class="chat-list-element-time-container">
+                                    <div class="sns-pn-410 tg5">10:30</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-list-sep"></div>
+
+                </div>
+
+                <div class="chat-list-element c-w">
+                        <img src="assets/img/11_alberto.jpg" class="img-profile-52">
+                        <div class="chat-list-element-content">
+                            <div class="chat-list-element-content-text">
+                                <div class="chat-list-element-title sns-sp-620 tg6">Bonfiglio Alberto</div>
+                                <div class="chat-list-element-subtitle sns-sp-416 tg3">Hi! I'm late. Remember to backup yesterday's work
+                                    because a storm is coming and the UPS is not connected.</div>
+                            </div>
+                            <div class="chat-list-element-content-right">
+                                <div class="chat-list-element-time-container">
+                                    <div class="sns-pn-410 tg5">10:30</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-list-sep"></div>
+
+                </div>
+
+            </div>
+
+            <a href="###">
+                <div class="btn-round btn-new-chat tFF">
+                    <i class="material-icons settings">add</i>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="cnt-section-right"></div>
+
+    </div>
+    <button onclick="logout()">Logout<br>Provvisorio</button>
+
+</body>
+
+</html>
