@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.8.5/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.8.5/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.8.5/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.8.5/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.8.5/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style>
+    </style>
+  </head>
+  <body>
+    <div>Leo</div>
+<<<<<<< HEAD
+    <div>Nome 2</div>
+    <div>Rogi</div>
+=======
+    <div>Vito</div>
+<<<<<<< HEAD
+    <div>Nome 3</div>
+>>>>>>> 17bd386600077ace8871f85be9030c36c5f4eb9b
+=======
+    <div>Nome 3 - vi incasino tutto</div>
+>>>>>>> 01de85d83026594ccaf2462246afef820619c6a3
+  </body>
+</html>
